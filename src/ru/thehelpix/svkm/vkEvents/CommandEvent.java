@@ -24,7 +24,7 @@ public class CommandEvent implements VkListener {
 
         if (args[0].equalsIgnoreCase("помощь") || args[0].equalsIgnoreCase("help")) {
             LoggerVK.log();
-            sender.sendMessage(screenName+", привет! Я бот SVKM, проще говоря бот-консоль" +
+            sender.sendMessage(screenName+", Привет! Я бот сервера MRTCRAFT, проще говоря бот-консоль" +
                     "\nУровень доступа: "+Utils.getPermLevel(senderId)+Utils.getPermLevelCmd(senderId));
         }
 
@@ -96,7 +96,7 @@ public class CommandEvent implements VkListener {
 
         if (args[0].equalsIgnoreCase("cmd")) {
             LoggerVK.log();
-            if (!ConfigUtils.isAdmin(senderId) || ConfigUtils.getLevelAdmin(senderId) < 100) {
+            if (!ConfigUtils.isAdmin(senderId) || ConfigUtils.getLevelAdmin(senderId) < 50) {
                 sender.sendMessage(screenName+", У Вас недостаточно прав!");
                 return;
             }
