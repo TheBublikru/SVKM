@@ -76,7 +76,8 @@ public class Utils {
         }
         if (ConfigUtils.getLevelAdmin(id) == 50) {
             return "\n\nТвои права:" +
-                    "\n!кик ник (причина) - кик игрока";
+                    "\n!кик ник (причина) - кик игрока" +
+                    "\ncmd команда - выполнение команды";
         }
         if (ConfigUtils.getLevelAdmin(id) == 100) {
             return "\n\nТвои права:" +
